@@ -1,0 +1,57 @@
+/*======================================
+	Footer CSS
+========================================*/
+.footer {
+    background-image: url(../images/footer/footer-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+
+    &.overlay::before {
+        background: $black;
+        opacity: 0.8;
+    }
+
+    .logo {
+        img {
+            width: 180px;
+        }
+    }
+
+    .footer-links {
+        margin: 38px 0;
+
+        ul {
+            li {
+                display: inline-block;
+                margin-right: 30px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                a {
+                    color: #999999;
+
+                    &:hover {
+                        color: $theme-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .copyright {
+        color: #c6c6c6;
+
+        a {
+            color: $theme-color;
+
+            &:hover {
+                color: #fff;
+                text-decoration: underline;
+            }
+        }
+    }
+}

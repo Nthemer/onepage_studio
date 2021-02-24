@@ -1,0 +1,94 @@
+/*======================================
+	Contact CSS
+========================================*/
+.contact-us {
+    position: relative;
+    background-color: $gray;
+
+    .form {
+        .form-group {
+            margin-bottom: 30px;
+
+            input {
+                width: 100%;
+                height: 55px;
+                color: #c3c3c3;
+                background-color: $white;
+                border: 1px solid #eaeaea;
+                border-radius: 3px;
+                padding: 0px 20px;
+            }
+
+            textarea {
+                width: 100%;
+                height: 180px;
+                color: #c3c3c3;
+                background-color: $white;
+                border: 1px solid #eaeaea;
+                border-radius: 3px;
+                padding: 20px;
+                resize: none;
+            }
+        }
+    }
+
+    .contact-info {
+        .single-info {
+            margin-bottom: 42px;
+
+            &:last-child {
+                margin: 0;
+            }
+
+            h4 {
+                font-size: 16px;
+                font-weight: 600;
+                margin-bottom: 15px;
+            }
+
+            ul {
+                li {
+                    display: block;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: #676767;
+
+                    a {
+                        color: #676767;
+
+                        &:hover {
+                            color: $theme-color;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .contact-social {
+            ul {
+                li {
+                    list-style: none;
+                    display: inline-block;
+                    text-decoration: none;
+                    margin-right: 35px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        font-size: 20px;
+                        color: $theme-color;
+
+                        &:hover {
+                            color: $black;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}

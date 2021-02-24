@@ -1,0 +1,100 @@
+/*======================================
+    Testimonial CSS
+========================================*/
+.testimonials {
+    .testi-slider-head {
+        position: relative;
+
+        .tns-nav {
+            text-align: left;
+            position: absolute;
+            bottom: 30px;
+            left: 407px;
+            z-index: 9;
+
+            button {
+                height: 3px;
+                width: 35px;
+                background-color: #b2b2b2;
+                border-radius: 3px;
+                display: inline-block;
+                border: none;
+                margin: 0px 5px;
+                transition: all 0.4s ease;
+
+                &:hover {
+                    background: $theme-color;
+                }
+
+                &.tns-nav-active {
+                    background: $theme-color;
+                }
+            }
+        }
+    }
+
+
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 2000px) {
+    .testimonials {
+        .testi-slider-head {
+            .tns-nav {
+                left: 465px !important;
+            }
+        }
+
+    }
+}
+
+.single-testimonial {
+    .image {
+        position: relative;
+
+        .person-image {
+            height: 340px;
+            width: 340px;
+            border-radius: 50%;
+            display: block;
+            text-align: right;
+            float: right;
+        }
+
+        .quote {
+            height: 60px;
+            width: 60px;
+            line-height: 58px;
+            text-align: center;
+            border-radius: 50%;
+            position: absolute;
+            right: 2px;
+            top: 45px;
+            background: #eaeaea;
+        }
+    }
+
+    .content {
+        padding-left: 30px;
+
+        p {
+            margin-bottom: 35px;
+
+            &:last-child {
+                margin: 0;
+            }
+        }
+
+        .name {
+            font-size: 22px;
+            font-weight: 600;
+
+            .deg {
+                font-size: 16px;
+                font-weight: 400;
+                display: block;
+                color: #9b9b9b;
+                margin-top: 8px;
+            }
+        }
+    }
+}

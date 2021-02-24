@@ -1,0 +1,40 @@
+/*======================================
+    Call To Action CSS
+========================================*/
+.call-action {
+    background-image: url('../images/cta/call-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 90px 0;
+
+    &.overlay::before {
+        background: $black;
+        opacity: 0.8;
+    }
+
+    .content {
+        h2 {
+            font-size: 50px;
+            font-weight: 500;
+            color: $white;
+        }
+
+        p {
+            color: $white;
+            display: block;
+            margin-top: 7px;
+        }
+    }
+
+    .button {
+        float: right;
+
+        .btn {
+            &:hover {
+                background: $white;
+                color: $black;
+            }
+        }
+    }
+}

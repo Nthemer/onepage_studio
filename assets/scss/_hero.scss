@@ -1,0 +1,56 @@
+/*======================================
+    Hero Area CSS
+========================================*/
+.hero-area {
+    position: relative;
+    background-image: url('../images/hero/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 280px 0 185px 0;
+
+    &.overlay::before {
+        background: $black;
+        opacity: 0.8;
+    }
+
+    .hero-text {
+        float: none;
+        text-align: center;
+
+        h5 {
+            font-size: 16px;
+            font-weight: 600;
+            color: $theme-color;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-weight: 600;
+            font-size: 60px;
+            line-height: 80px;
+            color: $white;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            color: $white;
+            margin-top: 35px;
+            line-height: 26px;
+        }
+
+        .button {
+            margin-top: 40px;
+
+            .btn {
+                &:hover {
+                    color: $black;
+                    background: $white;
+                }
+            }
+        }
+    }
+}
